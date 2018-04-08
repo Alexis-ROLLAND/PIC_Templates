@@ -1,0 +1,285 @@
+// Bits de configuration //
+
+/*----------------------------------------------------------------------------*/
+// PIC 18F2520 18F4520
+/*----------------------------------------------------------------------------*/
+/* bits de configuration (base PIC18F2520)                                    */
+/* Voir fichier  pic18_chipinfo.html pour connaître les bits de config de la cible*/
+#pragma config IESO = OFF   // Internal/External Oscillator Switchover bit (ON / OFF)
+#pragma config OSC = HS     // Oscillator Selection bits (XT, HS, ...)
+#pragma config FCMEN = OFF  // Fail-Safe Clock Monitor Enable bit
+#pragma config BOREN = OFF  // Brown-out Reset Enable bits (ON, OFF, NOSLP, SBORDIS)
+#pragma config BORV =  3    // Brown Out Reset Voltage bits (0,1,2,3 = Min settings)
+#pragma config PWRT = ON    // Power-up Timer Enable bit (ON / OFF)
+#pragma config WDTPS = 256  // Watchdog Timer Postscale Select bits
+#pragma config WDT = OFF    // Watchdog Timer Enable bit
+#pragma config CCP2MX = PORTC   // CCP2 MUX bit
+#pragma config PBADEN = OFF // PORTB A/D Enable bit
+#pragma config LPT1OSC = OFF // Low-Power Timer1 Oscillator Enable bit
+#pragma config MCLRE = ON   // MCLR Pin Enable bit
+#pragma config DEBUG = OFF  // Background Debugger Enable bit
+#pragma config STVREN = OFF // Stack Full/Underflow Reset Enable bit
+#pragma config XINST = OFF  // Extended Instruction Set Enable bit
+#pragma config LVP = OFF    // Single-Supply ICSP Enable bit
+
+// Protection lecture
+#pragma config CP0 = OFF, CP1 = OFF, CP2 = OFF, CP3 = OFF
+#pragma config CPD = OFF, CPB = OFF
+#pragma config WRT0 = OFF, WRT1 = OFF, WRT2 = OFF, WRT3 = OFF
+#pragma config WRTB = OFF, WRTC = OFF, WRTD = OFF
+#pragma config EBTR0 = OFF, EBTR1 = OFF, EBTR2 = OFF, EBTR3 = OFF, EBTRB = OFF
+/*----------------------------------------------------------------------------*/
+
+/*----------------------------------------------------------------------------*/
+// PIC 18F2680 18F4680
+/*----------------------------------------------------------------------------*/
+/* bits de configuration (PIC18F4680)                                    */
+/* Voir fichier  pic18_chipinfo.html pour connaître les bits de config de la cible*/
+#pragma config IESO = OFF   // Internal/External Oscillator Switchover bit (ON / OFF)
+#pragma config OSC = HS     // Oscillator Selection bits (XT, HS, ...)
+#pragma config FCMEN = OFF  // Fail-Safe Clock Monitor Enable bit
+#pragma config BOREN = OFF  // Brown-out Reset Enable bits (ON, OFF, NOSLP, SBORDIS)
+#pragma config BORV =  1    // 4.3V
+#pragma config PWRT = ON    // Power-up Timer Enable bit (ON / OFF)
+#pragma config WDTPS = 256  // Watchdog Timer Postscale Select bits
+#pragma config WDT = OFF    // Watchdog Timer Enable bit
+#pragma config PBADEN = OFF // PORTB A/D Enable bit
+#pragma config LPT1OSC = OFF // Low-Power Timer1 Oscillator Enable bit
+#pragma config MCLRE = ON   // MCLR Pin Enable bit
+#pragma config DEBUG = OFF  // Background Debugger Enable bit
+#pragma config STVREN = OFF // Stack Full/Underflow Reset Enable bit
+#pragma config XINST = OFF  // Extended Instruction Set Enable bit
+#pragma config LVP = OFF    // Single-Supply ICSP Enable bit
+
+// Protection lecture
+#pragma config CP0 = OFF, CP1 = OFF, CP2 = OFF, CP3 = OFF
+#pragma config CPD = OFF, CPB = OFF
+#pragma config WRT0 = OFF, WRT1 = OFF, WRT2 = OFF, WRT3 = OFF
+#pragma config WRTB = OFF, WRTC = OFF, WRTD = OFF
+#pragma config EBTR0 = OFF, EBTR1 = OFF, EBTR2 = OFF, EBTR3 = OFF, EBTRB = OFF
+/*----------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------*/
+// PIC 18F1320
+/*----------------------------------------------------------------------------*/
+/* bits de configuration (PIC18F1320)                                    */
+/* Voir fichier  pic18_chipinfo.html pour connaître les bits de config de la cible*/
+#pragma  config   FSCM = OFF    // Fail-Safe Clock Monitor Enable bit (ON/OFF)
+#pragma  config   IESO = OFF   // Internal External Switchover bit (ON/OFF)
+#pragma  config   OSC = INTIO1 // OScillatour selection
+#pragma  config   BOR = ON // Brown out enable (ON/OFF)
+#pragma  config   BORV = 27  // Brown Out Voltage (42 / 27 /45)
+#pragma  config   PWRT = ON // Power up timer (ON/OFF)
+#pragma  config   WDTPS = 512 // Watchdog timer postscaler
+#pragma  config   WDT = OFF // Watchdog enable (ON/OFF)
+#pragma  config   MCLRE = ON // MCLR enable (ON/OFF)
+#pragma  config   DEBUG = OFF
+#pragma  config   LVP = OFF
+#pragma  config   STVR = OFF
+
+// Protection lecture
+#pragma config CP0 = OFF, CP1 = OFF
+#pragma config CPD = OFF, CPB = OFF
+#pragma config WRT0 = OFF, WRT1 = OFF
+#pragma config WRTB = OFF, WRTC = OFF, WRTD = OFF
+#pragma config EBTR0 = OFF, EBTR1 = OFF, EBTRB = OFF
+
+/*----------------------------------------------------------------------------*/
+// PIC 18F26K80 - Attention différent de 18F2680
+/*----------------------------------------------------------------------------*/
+/* bits de configuration (PIC18F26K80 /!\)                                    */
+/* Voir fichier  pic18_chipinfo.html pour connaître les bits de config de la cible*/
+/*----------------------------------------------------------------------------*/
+// PIC 18F26K80
+/*----------------------------------------------------------------------------*/
+#pragma config INTOSCSEL = LOW // LF-INTOSC Low-power Enable bit (HIGH/LOW)
+#pragma config SOSCSEL = HIGH //	SOSC Power Selection and mode Configuration bits (HIGH / DIG / LOW)
+#pragma config XINST = OFF // 	Extended Instruction Set (ON/OFF)
+#pragma config RETEN =	OFF // VREG Sleep Enable bit (ON/OFF)
+#pragma config IESO = OFF   // Internal/External Oscillator Switchover bit (ON / OFF)
+#pragma config FOSC = HS1     // Oscillator Selection bits (XT, HS, ...)
+#pragma config FCMEN = OFF  // Fail-Safe Clock Monitor Enable bit
+#pragma config PLLCFG =	OFF   // PLL x4 Enable bit (ON/OFF)
+#pragma config BOREN = OFF  // Brown-out Reset Enable bits (ON, OFF, NOSLP, SBORDIS)
+#pragma config BORPWR =	HIGH // BORMV Power level (HIGH/ZPBORMV/MEDIUM/LOW)
+#pragma config BORV =  1    // 2.7V
+#pragma config PWRTEN = ON    // Power-up Timer Enable bit (ON / OFF)
+#pragma config WDTPS = 256  // Watchdog Timer Postscale Select bits
+#pragma config WDTEN = OFF    // Watchdog Timer Enable bit
+#pragma config CANMX = PORTB // ECAN Mux bit (PORTB/PORTC)
+#pragma config MSSPMSK = MSK7 // MSSP address masking (MSK7/MSK5)
+#pragma config MCLRE = ON   // MCLR Pin Enable bit
+#pragma config STVREN = OFF // Stack Full/Underflow Reset Enable bit
+#pragma config BBSIZ =	BB2K // Boot Block Size (BB2K/BB1K)
+#pragma config XINST = OFF  // Extended Instruction Set Enable bit
+
+
+// Protection lecture
+#pragma config CP0 = OFF, CP1 = OFF, CP2 = OFF, CP3 = OFF
+#pragma config CPD = OFF, CPB = OFF
+#pragma config WRT0 = OFF, WRT1 = OFF, WRT2 = OFF, WRT3 = OFF
+#pragma config WRTB = OFF, WRTC = OFF, WRTD = OFF
+#pragma config EBTR0 = OFF, EBTR1 = OFF, EBTR2 = OFF, EBTR3 = OFF, EBTRB = OFF
+
+/*----------------------------------------------------------------------------*/
+/*Insérer Ici les bits de configuration pour le µC 							  */
+/* -> Copier / Coller depuis le fichier Config.txt							  */
+/*----------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------*/
+//  18F8722
+/*----------------------------------------------------------------------------*/
+/* bits de configuration (base PIC18F8722)                                    */
+/* Voir fichier  pic18_chipinfo.html pour connaître les bits de config de la cible*/
+#pragma config IESO = OFF   // Internal/External Oscillator Switchover bit (ON / OFF)
+#pragma config OSC = HS     // Oscillator Selection bits (XT, HS, ...)
+#pragma config FCMEN = OFF  // Fail-Safe Clock Monitor Enable bit
+#pragma config BOREN = OFF  // Brown-out Reset Enable bits (ON, OFF, NOSLP, SBORDIS)
+#pragma config BORV =  3    // Brown Out Reset Voltage bits (0,1,2,3 = Min settings)
+#pragma config PWRT = ON    // Power-up Timer Enable bit (ON / OFF)
+#pragma config WDTPS = 256  // Watchdog Timer Postscale Select bits
+#pragma config WDT = OFF    // Watchdog Timer Enable bit
+#pragma config MODE = MC    // Processor Data Memory Mode Select bits (MC, EM, MPB, MP)
+#pragma config WAIT = OFF   // WAIT =	External Bus Data Wait Enable bit
+#pragma config DATABW = DATA8BIT
+#pragma config ADDRBW = ADDR16BIT
+#pragma config CCP2MX = PORTC   // CCP2 MUX bit (PORTC, PORTBE)
+#pragma config LPT1OSC = OFF // Low-Power Timer1 Oscillator Enable bit
+#pragma config ECCPMX = PORTH   // 	ECCP MUX bit (PORTH, PORTE)
+#pragma config MCLRE = ON   // MCLR Pin Enable bit
+#pragma config DEBUG = OFF  // Background Debugger Enable bit
+#pragma config STVREN = OFF // Stack Full/Underflow Reset Enable bit
+#pragma config XINST = OFF  // Extended Instruction Set Enable bit
+#pragma config BBSIZ = BB2K // Boot Block Size Select bits (BB2K, BB4K, BB8K)
+#pragma config LVP = OFF    // Single-Supply ICSP Enable bit
+
+// Protection lecture
+#pragma config CP0 = OFF, CP1 = OFF, CP2 = OFF, CP3 = OFF
+#pragma config CP4 = OFF, CP5 = OFF, CP6 = OFF, CP7 = OFF
+
+#pragma config CPD = OFF, CPB = OFF
+
+#pragma config WRT0 = OFF, WRT1 = OFF, WRT2 = OFF, WRT3 = OFF
+#pragma config WRT4 = OFF, WRT5 = OFF, WRT6 = OFF, WRT7 = OFF
+
+#pragma config WRTB = OFF, WRTC = OFF, WRTD = OFF
+#pragma config EBTR0 = OFF, EBTR1 = OFF, EBTR2 = OFF, EBTR3 = OFF
+#pragma config EBTR4 = OFF, EBTR5 = OFF, EBTR6 = OFF, EBTR7 = OFF
+#pragma config EBTRB = OFF
+/*----------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------*/
+/*Insérer Ici les bits de configuration pour le µC 							  */
+/* -> Copier / Coller depuis le fichier Config.txt							  */
+/*----------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------*/
+//  18F45K22
+/*----------------------------------------------------------------------------*/
+/* bits de configuration (base PIC18F45K22)                                    */
+/* Voir fichier  pic18_chipinfo.html pour connaître les bits de config de la cible*/
+#pragma	config PLLCFG = OFF  	// 4X PLL Enable (ON/OFF)
+#pragma config PRICLKEN = ON	// PRICLKEN =	Primary clock enable bit (OFF	Primary clock can be disabled by software, ON	Primary clock is always enabled)
+#pragma config FCMEN = OFF  // Fail-Safe Clock Monitor Enable bit
+#pragma config IESO = OFF   // Internal/External Oscillator Switchover bit (ON / OFF)
+#pragma config FOSC = HSMP     // Oscillator Selection bits (XT, HS, ...)
+
+#pragma config BOREN = OFF  // Brown-out Reset Enable bits (ON, OFF, NOSLP, SBORDIS)
+#pragma config BORV =  220    // Brown Out Reset Voltage bits
+#pragma config PWRTEN = ON    // Power-up Timer Enable bit (ON / OFF)
+
+#pragma config WDTPS = 256  // Watchdog Timer Postscale Select bits
+#pragma config WDTEN = OFF    // Watchdog Timer Enable bit
+
+#pragma config CCP2MX = PORTC1   // CCP2 MUX bit (PORTC1, PORTB3)
+#pragma config CCP3MX = PORTE0   // CCP3 MUX bit (PORTB5, PORTE0)
+#pragma config T3CMX = PORTC0	// T3CMX =	Timer3 Clock input mux bit (PORTC0/PORTB5)
+#pragma config HFOFST = OFF		// HFINTOSC Fast Start-up
+#pragma config PBADEN =	OFF		//	PORTB A/D Enable bit
+#pragma config MCLRE = EXTMCLR   // MCLR Pin Enable bit
+#pragma config P2BMX = PORTD2  // ECCP2 B output mux bit (PORTD2/PORTC0)
+
+#pragma config STVREN = OFF // Stack Full/Underflow Reset Enable bit
+#pragma config DEBUG = OFF  // Background Debugger Enable bit
+#pragma config LVP = OFF    // Single-Supply ICSP Enable bit
+#pragma config XINST = OFF  // Extended Instruction Set Enable bit
+
+// Protection lecture
+#pragma config CP0 = OFF, CP1 = OFF, CP2 = OFF, CP3 = OFF
+#pragma config CPD = OFF, CPB = OFF
+#pragma config WRT0 = OFF, WRT1 = OFF, WRT2 = OFF, WRT3 = OFF
+#pragma config WRTB = OFF, WRTC = OFF, WRTD = OFF
+#pragma config EBTR0 = OFF, EBTR1 = OFF, EBTR2 = OFF, EBTR3 = OFF
+#pragma config EBTRB = OFF
+/*----------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------*/
+//  18F26K22
+/*----------------------------------------------------------------------------*/
+/* bits de configuration (base PIC18F45K22)                                    */
+/* Voir fichier  pic18_chipinfo.html pour connaître les bits de config de la cible*/
+#pragma	config PLLCFG = OFF  	// 4X PLL Enable (ON/OFF)
+#pragma config PRICLKEN = ON	// PRICLKEN =	Primary clock enable bit (OFF	Primary clock can be disabled by software, ON	Primary clock is always enabled)
+#pragma config FCMEN = OFF  // Fail-Safe Clock Monitor Enable bit
+#pragma config IESO = OFF   // Internal/External Oscillator Switchover bit (ON / OFF)
+#pragma config FOSC = HSMP     // Oscillator Selection bits (XT, HS, ...)
+
+#pragma config BOREN = OFF  // Brown-out Reset Enable bits (ON, OFF, NOSLP, SBORDIS)
+#pragma config BORV =  220    // Brown Out Reset Voltage bits
+#pragma config PWRTEN = ON    // Power-up Timer Enable bit (ON / OFF)
+
+#pragma config WDTPS = 256  // Watchdog Timer Postscale Select bits
+#pragma config WDTEN = OFF    // Watchdog Timer Enable bit
+
+#pragma config CCP2MX = PORTC1   // CCP2 MUX bit (PORTC1, PORTB3)
+#pragma config CCP3MX = PORTC6   // CCP3 MUX bit (PORTB5, PORTC6)
+#pragma config T3CMX = PORTC0	// T3CMX =	Timer3 Clock input mux bit (PORTC0/PORTB5)
+#pragma config HFOFST = OFF		// HFINTOSC Fast Start-up
+#pragma config PBADEN =	OFF		//	PORTB A/D Enable bit
+#pragma config MCLRE = EXTMCLR   // MCLR Pin Enable bit
+#pragma config P2BMX = PORTB5  // ECCP2 B output mux bit (PORTB5/PORTC0)
+
+#pragma config STVREN = OFF // Stack Full/Underflow Reset Enable bit
+#pragma config DEBUG = OFF  // Background Debugger Enable bit
+#pragma config LVP = OFF    // Single-Supply ICSP Enable bit
+#pragma config XINST = OFF  // Extended Instruction Set Enable bit
+
+// Protection lecture
+#pragma config CP0 = OFF, CP1 = OFF, CP2 = OFF, CP3 = OFF
+#pragma config CPD = OFF, CPB = OFF
+#pragma config WRT0 = OFF, WRT1 = OFF, WRT2 = OFF, WRT3 = OFF
+#pragma config WRTB = OFF, WRTC = OFF, WRTD = OFF
+#pragma config EBTR0 = OFF, EBTR1 = OFF, EBTR2 = OFF, EBTR3 = OFF
+#pragma config EBTRB = OFF
+/*----------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------*/
+// PIC 18F2431
+/*----------------------------------------------------------------------------*/
+/* bits de configuration (base PIC18F2431)                                    */
+/* Voir fichier  pic18_chipinfo.html pour connaître les bits de config de la cible*/
+#pragma config OSC = HS     // Oscillator Selection bits (XT, HS, ...)
+#pragma config FCMEN = OFF  // Fail-Safe Clock Monitor Enable bit
+#pragma config IESO = OFF   // Internal/External Oscillator Switchover bit (ON / OFF)
+
+#pragma config BOREN = OFF  // Brown-out Reset Enable bits (ON, OFF, NOSLP, SBORDIS)
+#pragma config BORV =  42    // Brown Out Reset Voltage bits (0,1,2,3 = Min settings)
+#pragma config PWRTEN = ON    // Power-up Timer Enable bit (ON / OFF)
+
+#pragma config WINEN = OFF  // Watchdog Timer Window Enable bit
+#pragma config WDPS = 256  // Watchdog Timer Postscale Select bits
+#pragma config WDTEN = OFF    // Watchdog Timer Enable bit
+
+#pragma config T1OSCMX = OFF    // Timer1 Oscillator MUX
+#pragma config PWMPIN =  OFF       // PWM output pins Reset state control
+#pragma config HPOL =	HIGH    // High-Side Transistors Polarity
+#pragma config LPOL =	HIGH    // Low-Side Transistors Polarity
+
+#pragma config MCLRE = ON   // MCLR Pin Enable bit
+
+#pragma config DEBUG = OFF  // Background Debugger Enable bit
+#pragma config STVREN = OFF // Stack Full/Underflow Reset Enable bit
+#pragma config LVP = OFF    // Single-Supply ICSP Enable bit
+
+// Protection lecture
+#pragma config CP0 = OFF, CP1 = OFF, CP2 = OFF, CP3 = OFF
+#pragma config CPD = OFF, CPB = OFF
+#pragma config WRT0 = OFF, WRT1 = OFF, WRT2 = OFF, WRT3 = OFF
+#pragma config WRTB = OFF, WRTC = OFF, WRTD = OFF
+#pragma config EBTR0 = OFF, EBTR1 = OFF, EBTR2 = OFF, EBTR3 = OFF, EBTRB = OFF
+/*----------------------------------------------------------------------------*/
+
