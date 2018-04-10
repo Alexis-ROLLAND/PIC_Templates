@@ -45,7 +45,7 @@
 #pragma config  WINDIS = ON         // Watchdog Timer Window (ON, OFF)
 #pragma config  FWDTEN = OFF        // Watchdog Timer Enable (ON, OFF)
 #pragma config  ICS = PGx2          // Comm Channel Select (PGx1, PGx2, PGx3)
-#pragma config  COE = OFF           // Set Clip On Emulation Mode (ON, OFF)
+/* #pragma config  COE = OFF           // Set Clip On Emulation Mode (ON, OFF)   // Non valide pour xc16 >= V1.33 */
 #pragma config  BKBUG = OFF         // Background Debug (ON, OFF)
 #pragma config  GWRP = OFF          // General Code Segment Write Protect (ON, OFF)
 #pragma config  GCP = OFF           // General Code Segment Code Protect (ON, OFF)
