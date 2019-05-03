@@ -25,7 +25,7 @@
 
 
 /* Programme Principal			*/
-void main(void)
+int main(void)
 {
 // Variables locales au main
 
