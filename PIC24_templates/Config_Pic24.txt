@@ -24,7 +24,7 @@
 //----------------------------------------------------------------------------
 
 /*--------------------------------------------------------------------------*/
-/* PIC24FJ128GA705															*/
+/* PIC24FJ256GA705(															*/
 /*--------------------------------------------------------------------------*/
 #pragma config BWRP = OFF           // Boot Segment Write-Protect bit
 #pragma config BSS = DISABLED       // Boot Segment Code-Protect Level bits
@@ -61,75 +61,6 @@
 #pragma config SOSCHP = ON          // SOSC High Power Enable bit (valid only when SOSCSEL = 1)
 #pragma config ALTI2C1 = ALTI2CDIS  // Alternate I2C pin Location
 //----------------------------------------------------------------------------
-
-//----------------------------------------------------------------------------
-/*--------------------------------------------------------------------------*/
-/* PIC24FJ256GB106															*/
-/*--------------------------------------------------------------------------*/
-#pragma config	WPFP = WPFP0
-#pragma config	WPDIS = WPDIS		// Segment Write Protection (WPEN, WPDIS)
-#pragma config	WPCFG = WPCFGDIS	// Configuration Word Code Page Protection (WPCFGDIS,WPCFGEN)
-#pragma config	WPEND = WPSTARTMEM	// Segment Write Protection End Page Select bit (WPSTARTMEM,WPENDMEM)
-#pragma config	POSCMOD = EC        // Primary Oscillator Select (EC, XT, HS, NONE)
-#pragma config	DISUVREG = ON		// Internal USB 3.3V Regulator Disable bit (ON, OFF)
-#pragma config	IOL1WAY = OFF		// IOLOCK One-Way Set Enable bit (ON, OFF)
-#pragma config	OSCIOFNC = OFF		// Primary Oscillator Output Function (ON, OFF)
-#pragma config 	FCKSM = CSDCMD      // Clock Switching and Monitor (CSECME, CSECMD, CSDCMD)
-#pragma config 	FNOSC = PRI         // Oscillator Select (FRC, FRCPLL, PRI, PRIPLL, SOSC, LPRC, FRCDIV)
-#pragma config	PLL_96MHZ = ON		// 96MHz PLL Disable
-#pragma config	PLLDIV = NODIV		// USB 96 MHz PLL Prescaler Select bits
-#pragma config  IESO = OFF          // Internal External Switch Over Mode (ON, OFF)
-#pragma config  WDTPS = PS256       // Watchdog Timer Postscaler (PS1, PS2, PS4, PS8,..., PS32768)
-#pragma config  FWPSA = PR32        // WDT Prescaler (PR32, PR128)
-#pragma config  WINDIS = ON         // Watchdog Timer Window (ON, OFF)
-#pragma config  FWDTEN = OFF        // Watchdog Timer Enable (ON, OFF)
-#pragma config  ICS = PGx2          // Comm Channel Select (PGx1, PGx2, PGx3)
-/* #pragma config  COE = OFF           // Set Clip On Emulation Mode (ON, OFF)   // Non valide pour xc16 >= V1.33 */
-#pragma config  BKBUG = OFF         // Background Debug (ON, OFF)
-#pragma config  GWRP = OFF          // General Code Segment Write Protect (ON, OFF)
-#pragma config  GCP = OFF           // General Code Segment Code Protect (ON, OFF)
-#pragma config  JTAGEN = OFF        // JTAG Port Enable (ON, OFF)
-//----------------------------------------------------------------------------
-
-/*--------------------------------------------------------------------------*/
-/* PIC24FJ256GB106															*/
-/*--------------------------------------------------------------------------*/
-#pragma config	BWRP = OFF
-#pragma config	BSS = DISABLED 
-#pragma config	BSEN = OFF
-#pragma config	GWRP = OFF
-#pragma config	GSS = DISABLED
-#pragma config	CWRP = OFF
-#pragma config	CSS = DISABLED
-#pragma config	AIVTDIS = OFF
-#pragma config	BSLIM = BSLIM
-#pragma config	FNOSC = PRI
-#pragma config	PLLMODE = DISABLED
-#pragma config	IESO = OFF
-#pragma config	POSCMD = HS
-#pragma config	OSCIOFCN = OFF
-#pragma config	SOSCEL = OFF
-#pragma config	PLLSS = PLL_PRI
-#pragma config	IOL1WAY = OFF
-#pragma config	FCKSM = CSDCMD
-#pragma config	WDTPS = PS1
-#pragma config	FWPSA = PR32
-#pragma config	FWDTEN = OFF
-#pragma config	WINDIS = OFF
-#pragma config	WDTWIN = WIN50
-#pragma config	WDTCMX = LPRC
-#pragma config	WDTCLK = LPRC
-#pragma config	BOREN = OFF
-#pragma config	LPCFG = OFF
-#pragma config	DNVPEN = DISABLED
-#pragma config	ICS = PGX2
-#pragma config	JTAGEN = OFF
-#pragma config	BTSWP = OFF
-#pragma config	ALTCMPI = DISABLE
-#pragma config	TMPRPIN = OFF
-#pragma config	SOSCHP = OFF
-#pragma config	ALTVREF = ALTVREFDIS
-#pragma config	BTMODE = SINGLE
 
 /*--------------------------------------------------------------------------*/
 /* PIC24FV16KM202	-  /!\ 24FV = 5V version								*/
