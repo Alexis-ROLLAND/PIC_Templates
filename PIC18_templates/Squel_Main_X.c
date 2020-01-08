@@ -22,13 +22,13 @@
 					
 
 /* Interruptions haute priorité		*/
-static void interrupt ItHigh(void)
+void __interrupt(high_priority) ItHigh(void)
 {
 
 }
 
 /* Interruptions Basse priorité	*/
-static void interrupt low_priority ItLow(void)
+void __interrupt(low_priority) ItLow(void)
 {
 
 }
