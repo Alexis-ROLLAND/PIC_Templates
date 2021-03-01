@@ -80,6 +80,7 @@
 #pragma config	FCKSM = CSDCMD	//	Clock Switching and Monitor Selection (CSECME, CSECMD, CSDCMD)
 #pragma config	WDTPS = PS512	//	Watchdog Timer Postscale Select bits
 #pragma config	FWPSA = PR32	//	WDT Prescaler bit (PR32, PR128)
+#pragma config  FWDTEN = OFF    // Watchdog Timer Enable bits
 #pragma config	WINDIS = OFF	//	(ON, OFF)
 #pragma config	BOREN = BOR0	//	Brown-out Reset Enable bits (BOR0, BOR1, BOR2, BOR3)
 #pragma config	RETCFG = OFF	//	(ON, OFF)
