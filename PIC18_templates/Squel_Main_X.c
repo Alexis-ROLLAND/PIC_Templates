@@ -37,6 +37,8 @@ void __interrupt(low_priority) ItLow(void)
 void main(void)
 {
 
+Initialiser();
+
 while(1)
     {
 
