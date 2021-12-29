@@ -12,7 +12,7 @@
 #include "Template_Lib_Appli_H.h"   // Inclusion du fichier .h "Applicatif" renommé
 
 /*----------------------------------------------------------------------------*/
-/*Insérer Ici les bits de configuration pour le µC 							  */
+/*Insérer Ici les bits de configuration pour le MCU 							  */
 /* -> Copier / Coller depuis le fichier Config_Pic24.txt					  */
 /*----------------------------------------------------------------------------*/
 
