@@ -24,7 +24,49 @@
 //----------------------------------------------------------------------------
 
 /*--------------------------------------------------------------------------*/
-/* PIC24FJ256GA705(															*/
+/* PIC24FJ128GA202	(28 pins, 3.3V)											*/
+/*--------------------------------------------------------------------------*/
+#pragma config  POSCMD = NONE               //  Primary Oscillator Select (EC, XT, HS, NONE)
+#pragma config  FNOSC = FRC                 //  Initial Oscillator Select (FRC, FRCPLL, PRI, PRIPLL, SOSC, LPRC, FRCDIV)
+#pragma config  OSCIOFCN = OFF              //  OSCO Pin Configuration (ON = IO Port, OFF = ClkOut on RA3)
+
+#pragma config  DSWDTPS = DSWDTPS0          //  Deep Sleep Watchdog Timer Postscale 
+#pragma config  DSWDTOSC = LPRC             //  DSWDT Reference Clock Select (LPRC / SOSC)
+#pragma config  DSBOREN = OFF               //  Deep Sleep BOR Enable bit (ON / OFF)
+#pragma config  DSWDTEN = OFF               //  Deep Sleep Watchdog Timer Enable (ON / OFF)
+#pragma config  DSSWEN = OFF                //  DSEN Bit Enable (ON / OFF)
+#pragma config  PLLDIV = DISABLED           //  USB 96 MHz PLL Prescaler Select bits 
+#pragma config  I2C1SEL = DISABLE           //  Alternate I2C1 enable bit (ENABLE / DISABLE)
+#pragma config  IOL1WAY = OFF               //  PPS IOLOCK Set Only Once Enable bit
+#pragma config  WPFP = WPFP0                //  Write Protection Flash Page Segment Boundary
+#pragma config  SOSCSEL = OFF               //  SOSC Selection bits
+#pragma config  WDTWIN = PS50_0             //  Window Mode Watchdog Timer Window Width Select
+#pragma config  PLLSS = PLL_FRC             //  PLL Secondary Selection Configuration bit
+#pragma config  BOREN = OFF                 //  Brown-out Reset Enable
+#pragma config  WPDIS = WPDIS               //  Segment Write Protection Disable
+#pragma config  WPCFG = WPCFGDIS            //  Write Protect Configuration Page Select
+#pragma config  WPEND = WPSTARTMEM          //  Segment Write Protection End Page Select
+#pragma config  WDTCLK = LPRC               //  WDT Clock Source Select bits
+#pragma config  FCKSM = CSDCMD              //  Clock Switching and Fail-Safe Clock Monitor Configuration bits
+#pragma config  ALTCMPI = CxINC_RX          //  Alternate Comparator Input bit
+#pragma config  WDTCMX = LPRC               //  WDT Clock Source Select bits
+#pragma config  IESO = OFF                  //  Internal External Switchover
+#pragma config  WDTPS = PS128               //  Watchdog Timer Postscaler Select
+#pragma config  FWPSA = PR32                //  WDT Prescaler Ratio Select
+#pragma config  WINDIS = OFF                //  Windowed WDT Disable
+#pragma config  FWDTEN = OFF                //  Watchdog Timer Enable
+#pragma config  ICS = PGx1                  //  Emulator Pin Placement Select bits
+#pragma config  LPCFG = OFF                 //  Low power regulator control
+#pragma config  GWRP = OFF                  //  General Segment Write Protect
+#pragma config  GCP = OFF                   //  General Segment Code Protect
+#pragma config  JTAGEN = OFF                //  JTAG Port Enable
+
+
+
+//----------------------------------------------------------------------------
+
+/*--------------------------------------------------------------------------*/
+/* PIC24FJ256GA705															*/
 /*--------------------------------------------------------------------------*/
 #pragma config BWRP = OFF           // Boot Segment Write-Protect bit
 #pragma config BSS = DISABLED       // Boot Segment Code-Protect Level bits
